@@ -1,4 +1,4 @@
-/*let userCount=0;
+let userCount=0;
 let pcCount=0;
 pcChoice=function getComputerChoice(){
     let choice;
@@ -24,7 +24,7 @@ userChoice= function getUserChoice(){
 console.log(userChoice());
 
 //compare the user choice with the pc choice to play a round of the game
-function playRound(pcChoice,userChoice){
+function playRound(pcChoice,userChoice, userCount, pcCount){
     if (pcChoice==="rock" && userChoice==="rock"){
     console.log("it is a tie, we both picked rock");
     }
@@ -58,12 +58,13 @@ function playRound(pcChoice,userChoice){
         console.log("you won, you picked rock and I picked scissors");
         userCount++;
     }    
+    return [userCount,pcCount];
 }
 function Game(userCount, pcCount){
     for(let i=0; i<5; i++){
         let pc=pcChoice();
         let user=userChoice();
-        playRound(pc, user);
+       [userCount, pcCount]= playRound(pc, user, userCount, pcCount);
     }
     console.log("you got "+userCount+" points in total of five games");
     console.log("I got "+pcCount+" points in total of five games");
@@ -72,10 +73,11 @@ function Game(userCount, pcCount){
     }
     else console.log("you lost!");
 }
+Game();
 
-*/
 
 
+/*
 let userCount = 0;
 let pcCount = 0;
 
@@ -144,3 +146,4 @@ function Game() {
 Game();
 
 
+*/
