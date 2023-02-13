@@ -15,14 +15,37 @@ let pcChoice=function getComputerChoice(){
             }
     return choice.toLowerCase();
 }
-console.log(pcChoice());
+/*console.log(pcChoice());
 //generating user choice
 let userChoice= function getUserChoice(){
     let choice=prompt("Pick a choice: Rock, Paper or Scissors: ");
     return choice.toLowerCase();
 }
 console.log(userChoice());
-
+*/
+//select the input class to take user selection
+let container=document.querySelector("input");
+//define the preamble to prompt user choice
+let preamble=document.querySelector("preamble");
+//define the buttons
+let btn1=document.createElement("button");
+let btn2=document.createElement("button");
+let btn3=document.createElement("button");
+//define the buttons labels
+btn1.textContent="Rock";
+btn2.textContent="Paper";
+btn3.textContent="Scissors";
+//append the elements to the document
+container.appendChild(preamble);
+container.appendChild(btn1);
+container.appendChild(btn2);
+container.appendChild(btn3);
+container.appendChild(preamble);
+//define a user choice
+let userChoice;
+if(btn1.addEventListener("click", playRound)){userChoice="rock"}
+else if(btn2.addEventListener("click", playRound)){userChoice="paper"}
+else if(btn3.addEventListener("click,", playRound)){userChoice="scissors"}
 //compare the user choice with the pc choice to play a round of the game
 function playRound(pcChoice,userChoice, userCount, pcCount){
     if (pcChoice==="rock" && userChoice==="rock"){
@@ -74,4 +97,5 @@ function Game(userCount, pcCount){
     else console.log("you won!");
 }
 Game(userCount, pcCount);
+
 
