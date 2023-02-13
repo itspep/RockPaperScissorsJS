@@ -41,6 +41,10 @@ container.appendChild(btn1);
 container.appendChild(btn2);
 container.appendChild(btn3);
 container.appendChild(preamble);
+//defining the output elements
+let output=document.querySelector("output");
+let display=document.querySelector("p");
+output.appendChild(display);
 //define a user choice
 let userChoice;
 if(btn1.addEventListener("click", playRound)){userChoice="rock"}
@@ -49,36 +53,36 @@ else if(btn3.addEventListener("click,", playRound)){userChoice="scissors"}
 //compare the user choice with the pc choice to play a round of the game
 function playRound(pcChoice,userChoice, userCount, pcCount){
     if (pcChoice==="rock" && userChoice==="rock"){
-    console.log("it is a tie, we both picked rock");
+    display.textContent="It is a draw";
     }
     else if (pcChoice==="rock" && userChoice==="paper"){
-    console.log("you won, I picked rock and you picked paper");
+    display.textContent="you won, I picked rock and you picked paper";
     userCount++;
     }
     else if (pcChoice==="rock" && userChoice==="scissors"){
-        console.log("I won, you picked scissors and I picked rock");
+        display.textContent="I won, you picked scissors and I picked rock";
         pcCount++;
     }
     else if (pcChoice==="paper" && userChoice==="scissors"){
-        console.log("you won, you picked scissors and I picked paper");
+        display.textContent="you won, you picked scissors and I picked paper";
         userCount++;
     }
     else if (pcChoice==="scissors" && userChoice==="scissors"){
-        console.log("It is a tie, we both picked scissors");
+        display.textContent="It is a tie, we both picked scissors";
     }
     else if (pcChoice==="paper" && userChoice==="rock"){
-        console.log("I won, you picked rock and I picked paper");
+        display.textContent="I won, you picked rock and I picked paper";
         pcCount++;
     }
     else if (pcChoice==="paper" && userChoice==="paper"){
-        console.log("it is a tie, we both picked paper");
+        display.textContent="it is a tie, we both picked paper";
     }
     else if (pcChoice==="scissors" && userChoice==="paper"){
-        console.log("I won, you picked paper and I picked scissors");
+        display.textContent="I won, you picked paper and I picked scissors";
         pcCount++;
     }
     else if (pcChoice==="scissors" && userChoice==="rock"){
-        console.log("you won, you picked rock and I picked scissors");
+        display.textContent="you won, you picked rock and I picked scissors";
         userCount++;
     }    
     return [userCount,pcCount];
