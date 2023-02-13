@@ -27,6 +27,7 @@ console.log(userChoice());
 let container=document.querySelector("input");
 //define the preamble to prompt user choice
 let preamble=document.querySelector("preamble");
+preamble.textContent="Make a choice";
 //define the buttons
 let btn1=document.createElement("button");
 let btn2=document.createElement("button");
@@ -46,10 +47,9 @@ let output=document.querySelector("output");
 let display=document.querySelector("p");
 output.appendChild(display);
 //define a user choice
-let userChoice;
-if(btn1.addEventListener("click", playRound)){userChoice="rock"}
-else if(btn2.addEventListener("click", playRound)){userChoice="paper"}
-else if(btn3.addEventListener("click,", playRound)){userChoice="scissors"}
+btn1.addEventListener("click", function(){playRound(pcChoice(), "rock", userCount, pcCount);});
+btn2.addEventListener("click", function(){playRound(pcChoice(),"paper", userCount, pcCount);});
+btn3.addEventListener("click", function (){playRound(pcChoice(),"scissors", userCount, pcCount);});
 //compare the user choice with the pc choice to play a round of the game
 function playRound(pcChoice,userChoice, userCount, pcCount){
     if (pcChoice==="rock" && userChoice==="rock"){
