@@ -24,9 +24,9 @@ let userChoice= function getUserChoice(){
 console.log(userChoice());
 */
 //select the input class to take user selection
-let container=document.querySelector("input");
+let container=document.querySelector(".input");
 //define the preamble to prompt user choice
-let preamble=document.querySelector("preamble");
+let preamble=document.querySelector(".preamble");
 preamble.textContent="Make a choice";
 //define the buttons
 let btn1=document.createElement("button");
@@ -41,9 +41,8 @@ container.appendChild(preamble);
 container.appendChild(btn1);
 container.appendChild(btn2);
 container.appendChild(btn3);
-container.appendChild(preamble);
 //defining the output elements
-let output=document.querySelector("output");
+let output=document.querySelector(".output");
 let display=document.querySelector("p");
 output.appendChild(display);
 //define a user choice
