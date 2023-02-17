@@ -33,8 +33,10 @@ for (let i = 0; i < buttons.length; i++) {
 function playRound(pcChoice, userChoice) {
   if (roundsPlayed === 5) {
     if (userCount > pcCount) {
+      outCome.innerText=" ";
       document.getElementById("total").innerText = "Congratulations!, you beat the AI Final score: AI - " + pcCount + " | Human - " + userCount;
     } else {
+      outCome.innerText=" ";
       document.getElementById("total").innerText = "Humanity is doomed!" +
         " Final score: AI - " + pcCount + " | Human - " + userCount;
     }
