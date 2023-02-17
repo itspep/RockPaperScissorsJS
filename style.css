@@ -1,12 +1,12 @@
 body{
-    background-image:url("background.jpeg");
+    background-image:url("wallpaperflare.com_wallpaper\ \(2\).jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color:whitesmoke;
 }
 .container1{
-    background-image: url("manIA.png");
+    background-image: url("background.jpeg");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,19 +31,33 @@ body{
     margin:20px;
 }
 .heading{
-    margin-top:100px;
-    font-size: 50px; 
+    margin-top:70px;
+    font-size: 50px;
 }
 .buttons{
     color: red;
-    padding: 15px;
 }
 #btn1{
-    margin: 5px;
+    margin: 25px;
+    font-size: 25px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px;
 }
 #btn2{
-    margin: 5px;
+    margin: 25px;
+    font-size: 25px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px;
 }
 #btn3{
-    margin: 5px;
+    margin: 25px;
+    font-size: 25px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px;
+}
+.preamble{
+    text-align: center;
 }
