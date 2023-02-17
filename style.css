@@ -37,6 +37,11 @@ body{
 .buttons{
     color: red;
 }
+#btn1:hover{
+    background-color: green;
+    color: whitesmoke;
+}
+
 #btn1{
     margin: 25px;
     font-size: 25px;
@@ -44,6 +49,12 @@ body{
     border-radius: 15px;
     padding: 10px;
     background-color: blue;
+    color: whitesmoke;
+    transition: 0.4s;
+    cursor: pointer;
+}
+#btn2:hover{
+    background-color: green;
     color: whitesmoke;
 }
 #btn2{
@@ -54,6 +65,8 @@ body{
     padding: 10px;
     background-color: blue;
     color: whitesmoke;
+    transition: 0.4s;
+    cursor:pointer;
 }
 #btn3{
     margin: 25px;
@@ -63,10 +76,21 @@ body{
     padding: 10px;
     background-color: blue;
     color: whitesmoke;
+    transition: 0.4s;
+    cursor: pointer;
+}
+#btn3:hover{
+    background-color: green;
+    color: whitesmoke;
 }
 .preamble{
     text-align: center;
     font-size: 25px;
     padding-bottom: 30px;
     color: goldenrod;
+}
+#results{
+    font-size: 30px;
+    color: red;
+    text-align: center;
 }
