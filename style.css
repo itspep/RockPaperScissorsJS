@@ -1,9 +1,12 @@
 body{
-    background-color: lightskyblue;
-    color:navy;
+    background-image:url("background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:whitesmoke;
 }
 .container1{
-    background-color: bisque;
+    background-image: url("manIA.png");
     display: flex;
     flex-direction: column;
     justify-content: center;
