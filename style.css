@@ -11,14 +11,14 @@ body{
     flex-direction: column;
     justify-content: center;
     margin: 70px 100px;
-    padding: 90px 1px;
+    padding: 70px 1px;
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
     border: 1px solid black;
     border-radius: 25px;
     font-size: 20px;
-    color:red;
+    color: whitesmoke;
 }
 .buttons, .preamble, .heading, .results{
     display: flex;
@@ -40,24 +40,33 @@ body{
 #btn1{
     margin: 25px;
     font-size: 25px;
-    border: 1px solid white;
+    border: 2px solid black;
     border-radius: 15px;
     padding: 10px;
+    background-color: blue;
+    color: whitesmoke;
 }
 #btn2{
     margin: 25px;
     font-size: 25px;
-    border: 1px solid white;
+    border: 2px solid black;
     border-radius: 15px;
     padding: 10px;
+    background-color: blue;
+    color: whitesmoke;
 }
 #btn3{
     margin: 25px;
     font-size: 25px;
-    border: 1px solid white;
+    border: 2px solid black;
     border-radius: 15px;
     padding: 10px;
+    background-color: blue;
+    color: whitesmoke;
 }
 .preamble{
     text-align: center;
+    font-size: 25px;
+    padding-bottom: 30px;
+    color: goldenrod;
 }

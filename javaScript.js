@@ -35,9 +35,13 @@ function playRound(pcChoice, userChoice) {
     if (userCount > pcCount) {
       outCome.innerText=" ";
       outCome.innerText = "Congratulations!, you beat the AI Final score: AI - " + pcCount + " | Human - " + userCount;
-    } else {
+    } else if(userCount===pcCount){
+      outCome.innerText="";
+      outCome.innerText="It is a tie, You have another chance to save humanity";
+    }
+      else{
       outCome.innerText=" ";
-      document.getElementById("total").innerText = "Humanity is doomed!" +
+      outCome.innerText = "Humanity is doomed!" +
         " Final score: AI - " + pcCount + " | Human - " + userCount;
     }
   } else {
